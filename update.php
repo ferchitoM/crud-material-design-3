@@ -26,7 +26,7 @@ if (isset($_POST["id"])) {
         $input_name = trim($_POST["name"]);
         if (empty($input_name)) {
             $name_err = "Por favor ingrese un nombre.";
-        } elseif (!filter_var($input_name, FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[a-zA-Z\s]+$/")))) {
+        } elseif (!filter_var($input_name, FILTER_VALIDATE_REGEXP, array("options" => array("regexp" => "/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/")))) {
             $name_err = "Por favor ingrese un nombre válido.";
         } else {
             $name = $input_name;
@@ -36,6 +36,8 @@ if (isset($_POST["id"])) {
         $input_email = trim($_POST["email"]);
         if (empty($input_email)) {
             $email_err = "Por favor ingrese un correo electrónico.";
+        } elseif (!filter_var($input_email, FILTER_VALIDATE_EMAIL)) {
+            $email_err = "Por favor ingrese un email válido.";
         } else {
             $email = $input_email;
         }
