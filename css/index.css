@@ -1,0 +1,77 @@
+:root {
+  --md-ref-typeface-brand: Inter;
+  --md-ref-typeface-plain: Rubik;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  margin: 1rem;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  margin: 1rem auto;
+  position: relative;
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  --md-elevation-level: 2;
+  --md-sys-color-shadow: var(--main-shadow-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.button-add {
+  float: right;
+  margin-bottom: 1rem;
+}
+
+md-list {
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+md-list-item div {
+  color: var(--main-font-color);
+}
+md-list-item img {
+  border-radius: 50%;
+}
+md-list-item md-icon {
+  --md-icon-font: "Material Symbols Sharp";
+}
+md-list-item md-icon a {
+  color: var(--main-font-color);
+  transition: 300ms ease;
+}
+md-list-item md-icon a:hover {
+  color: var(--md-sys-color-primary-container);
+}
+
+md-dialog {
+  --md-dialog-container-color: var(--main-bg-color);
+}
+md-dialog .actions {
+  display: flex;
+  gap: 1.5rem;
+}
+md-dialog .content {
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+md-dialog .button {
+  --md-sys-color-outline: var(--md-sys-color-primary);
+}/*# sourceMappingURL=index.css.map */

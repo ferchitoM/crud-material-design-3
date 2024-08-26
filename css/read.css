@@ -1,0 +1,67 @@
+:root {
+  --md-ref-typeface-brand: Inter;
+  --md-ref-typeface-plain: Rubik;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  margin: 1rem;
+}
+
+main {
+  --md-elevation-level: 0;
+  margin: 2rem auto;
+  color: var(--main-font-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 28rem;
+  border-radius: 2rem;
+}
+
+h1 {
+  margin: 1rem 0 1rem 0;
+}
+
+img {
+  border: 0.5rem solid var(--main-bg-color);
+  width: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+article {
+  position: relative;
+  background-color: var(--main-bg-color);
+  --md-elevation-level: 2;
+  --md-sys-color-shadow: var(--main-shadow-color);
+  border-radius: 2rem;
+  margin-top: -8rem;
+  padding: 8rem 3rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+article section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+article footer {
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+md-outlined-text-field {
+  flex: 1;
+}
+
+md-elevated-button, md-filled-button {
+  border-radius: 0;
+}/*# sourceMappingURL=read.css.map */
